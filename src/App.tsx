@@ -44,8 +44,9 @@ type Role = "Parent" | "Operations" | "Driver" | "School" | "Vendor" | "Fleet";
 type ParentView = "Home" | "Children" | "Transport" | "Meals" | "Account";
 type Modal = "booking" | "meal" | "trip" | "notifications" | null;
 
-const mealImage = "/images/rice-chicken.jpg";
-const secondMealImage = "/images/beans-plantain.jpg";
+// Respect Vite base paths so local previews and the /Karrygo/ Pages URL both load images.
+const mealImage = `${import.meta.env.BASE_URL}images/rice-chicken.jpg`;
+const secondMealImage = `${import.meta.env.BASE_URL}images/beans-plantain.jpg`;
 
 const roleOptions: { role: Role; label: string; icon: LucideIcon }[] = [
   { role: "Parent", label: "Parent app", icon: CircleUserRound },
