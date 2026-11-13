@@ -1,0 +1,10 @@
+{
+  "description": "Coordinate reliable school transport and meals for children, connecting parents, schools, drivers, vendors and fleet partners through one platform.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
