@@ -6,5 +6,10 @@
   "accessibility": {
     "addBypassLinks": false,
     "ignoreReducedMotion": false
+  },
+  "title": "Karrygo | School Transport & Meals",
+  "language": "en",
+  "icons": {
+    "icon": "./favicon.png"
   }
 }
