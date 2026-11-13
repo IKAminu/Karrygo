@@ -13,7 +13,8 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 
   return {
-    base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
+    // GitHub Pages serves this repository under /Karrygo/. Keep Figma previews on their existing base.
+    base: process.env.GITHUB_ACTIONS === 'true' ? '/Karrygo/' : process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
